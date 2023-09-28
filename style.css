@@ -1,30 +1,30 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
-}
-
-body {
-    background-image: url("img/back.jpg");
+    box-sizing: border-box;
+    }
+  
+  body {
+    background-image: url("./img/back.jpg");
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    font-family: "Open Sans", sans-serif
-}
-
-main {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  main {
     display: flex;
-    flex-direction: column
-}
-
-.title {
+    flex-direction: column;
+  }
+  
+  .title {
     color: #ffffffff;
     margin: 20vh auto;
     font-size: calc(5vw + 20px);
-    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black
-}
-
-.container {
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+  }
+  
+  .container {
     width: 90vw;
     height: 100px;
     margin: 0 auto;
@@ -32,46 +32,49 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 15px
-}
-
-
-/* Estilo para a classe contador */
-.contador {
-    text-align: center; /* Centraliza o texto horizontalmente */
-    margin-top: 5px; /* Espaço superior para separar o contador da tecla */
-    font-size: 14px; /* Tamanho da fonte do contador */
-    color: #fff;
-    background-color: #fcf7f7bb;
+    gap: 15px;
   }
-
-
-.key {
+  
+  .key {
     display: flex;
     width: 100px;
     height: 100px;
     align-items: center;
     justify-content: center;
     background-color: #000000bb;
-    color: #fff;
+    color: white;
     font-size: calc(3vw + 20px);
-    border: 3px solid #fff;
+    border: 3px solid white;
     user-select: none;
     cursor: pointer;
-    transition: transform .2s;
-    border-radius: 15px
-}
-
-.key:hover {
-    background: linear-gradient(#000, #ffa500);
+    transition: transform 0.2s;
+    border-radius: 15px;
+  }
+  
+  .key:hover {
+    background: linear-gradient(black, orange); 
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    transition: .5s
-}
-
-.active {
+    cursor: url('./img/Caio.png'), auto;
+    transition: 0.5s;
+  }
+  
+  .active {
     transform: scale(1.3);
-    border-color: #f00;
-    box-shadow: 0 0 50px red
-}
+    border-color: red;
+    box-shadow: 0 0 50px red;
+  }
+  
+  /* Estilos para centralizar o botão no topo da página */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso faz com que o contêiner ocupe toda a altura da tela */
+  }
+  
+  #randomSoundButton {
+    font-size: 24px; /* Tamanho da fonte do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+  }
